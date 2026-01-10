@@ -10,13 +10,85 @@
 }
 .main-header {
     min-height: 80px;
-    padding-top: 10px;
     background: transparent!important;
+}
+.header-lower .auto-container{
+  margin-top: 20px;
+}
+.main-header.fixed-header .header-lower .auto-container{
+  margin-top: 0px;
 }
 .main-header .main-menu {
     background: transparent;
 }
+.hero_section {
+  position: relative;
+  margin-top: -100px;
+}
+.hero_section .container{
+  padding-top: 120px;
+}
 
+.header-lower .container{
+  background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,255,255,0.7), rgba(255,255,255,1));
+  border-radius: 50px;
+  padding: 0px 20px 0px 0px;
+}
+.main-header .header-lower .logo-box {
+    padding:  0px;
+}
+
+.header-lower .container img{
+  padding: 10px 25px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 60px;
+}
+
+.menu-outer .navbar-header{
+  display: none;
+}
+.mobile-menu .nav-logo {
+    background: #000;
+    padding: 20px 20px;
+}
+.mobile-menu .close-btn {
+    background: red;
+    color: #fff;
+}
+.menu-box p{
+   background: linear-gradient(135deg, rgb(240, 179, 119), rgb(252, 166, 166));
+   margin-bottom: 0;
+   padding: 10px;
+   font-weight: 500;
+   font-size: 15px;
+}
+.main-header .mobile-menu .navigation li.dropdown .dropdown-btn:after {
+    border-left: 0px solid #dddddd;
+}
+.mobsocial{
+  background: #000;
+}
+
+@media screen and (max-width: 1200px) {
+.header-lower .auto-container{
+  margin-top: 20px;
+}
+.hero_section {
+  margin-top: -122px;
+}
+}
+@media screen and (max-width: 576px) {
+.hero_section .container {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-header{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+}
 
 .call-btn-container {
   display: inline-block;
