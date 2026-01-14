@@ -867,6 +867,8 @@
   max-width: 280px;
 }
 
+
+
 @media only screen and (max-width: 1400px) {
   .hero_section h1{
       font-size: 36px !important;
@@ -940,4 +942,134 @@
       line-height: 40px!important;
   }
 }
+
+
+
+
+ /* === Hero Section === */
+        .quote-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+              box-sizing: border-box;
+        }
+
+        /* === Contact Info Section === */
+        .contact-info {
+            flex: 1 1 350px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        .contact-info h2 {
+            color: #ff3b00;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info i {
+            color: #ff3b00;
+            margin-right: 10px;
+        }
+
+        /* === Quote Form Section === */
+        .quote-form {
+            flex: 1 1 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+              box-sizing: border-box;
+        }
+
+        .quote-form h2 {
+            color: #ff3b00;
+            margin-bottom: 20px;
+        }
+
+        .quote-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quote-form label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        .quote-form input,
+        .quote-form select,
+        .quote-form textarea {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            width: 100%;
+            resize: none;
+        }
+
+        .quote-form select {
+            cursor: pointer;
+        }
+
+        .quote-form textarea {
+            min-height: 120px;
+        }
+
+        .quote-form button {
+            margin-top: 20px;
+            background: #ff3b00;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quote-form button:hover {
+            background: #e63900;
+        }
+        .blocked_items .sc-contact-card{
+         border: 1px solid #e63900;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         box-shadow: none;
+        }
+        .contact-info {
+            padding: 30px 20px 0 20px;
+        }
+        /* === Responsive Adjustments === */
+        @media(max-width: 991px) {
+            .quote-content {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width: 575px) {
+            .quote-hero h1 {
+                font-size: 2rem;
+            }
+
+            .quote-hero p {
+                font-size: 1rem;
+            }
+        }
+
+        @media(max-width: 400px) {
+            .quote-content {
+            margin-left: -20px;
+          }
+        }
 

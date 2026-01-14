@@ -142,7 +142,7 @@
 	
     
     <!--===== HERO AREA STARTS =======-->
-    <div class="hero_section sp1 page_hero" style="background:url(assets/images/bgbnr3.jpeg); background-size: cover;">
+    <div class="hero_section sp1 page_hero" style="background:url(assets/images/blog-s3.jpeg); background-size: cover;">
     
       <div class="hero_overlay2"></div>
     
@@ -151,16 +151,10 @@
     
           <!-- Left Content -->
           <div class="left_content">
-            <h1>Discover Our Projects</h1>
+            <h1>Get Your Free Quote</h1>
             <p>
-              Discover the quality and craftsmanship behind Syncorp Constructions’ portfolio. From modern homes to innovative renovations, our projects showcase our commitment to excellence, attention to detail, and creative design solutions. Explore our work to see how we bring visions to life, inspire ideas, and deliver spaces that combine functionality, style, and lasting value.
+              Take the first step toward building your dream home with Syncorp Constructions. Our free quote service gives you a clear understanding of your project costs and options. Whether you’re planning a new build, renovation, extension, or knockdown rebuild, we provide expert guidance, tailored solutions, and transparent estimates to help you make confident decisions for your next home project.
             </p>
-    
-    		<div class="call-btn-container">
-              <a href="" class="animated-call-btn">
-                <span class="btn-text">Request A Quote</span>
-              </a>
-            </div>
     		
           </div>
     
@@ -170,45 +164,94 @@
     <!--===== HERO AREA ENDS =======-->
 
 
-    <!-- Projects Tab Section -->
-    <section class="projects-section">
-      <div class="container">
+    <!-- === Main Content Section === -->
+    <div class="quote-container container mt-5">
+        <div class="quote-content">
 
-        <!-- Tabs -->
-        <div class="projects-tabs">
-          <button class="projects-tab active" data-tab="all">All</button>
-          <button class="projects-tab" data-tab="completed">Completed</button>
-          <button class="projects-tab" data-tab="ongoing">Ongoing</button>
-          <button class="projects-tab" data-tab="upcoming">Upcoming</button>
+            <!-- Quote Form -->
+            <div class="quote-form">
+                <h2>Free Quote Form</h2>
+                <form action="#" method="post">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address*</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="projectType">Select Project Type</label>
+                    <select id="projectType" name="projectType" required>
+                        <option value="">--Select--</option>
+                        <option value="New Build">New Build</option>
+                        <option value="Renovation">Renovation</option>
+                        <option value="Extension">Extension</option>
+                        <option value="Knock & Rebuild">Knock & Rebuild</option>
+                    </select>
+
+                    <label for="designType">Select Design Type</label>
+                    <select id="designType" name="designType" required>
+                        <option value="">--Select--</option>
+                        <option value="Acreage Homes">Acreage Homes</option>
+                        <option value="Single Storey Homes">Single Storey Homes</option>
+                        <option value="Double Storey Homes">Double Storey Homes</option>
+                        <option value="Dual Living Homes">Dual Living Homes</option>
+                        <option value="Duplex Homes">Duplex Homes</option>
+                        <option value="Split Level Homes">Split Level Homes</option>
+                    </select>
+
+                    <label for="details">More Project Details</label>
+                    <textarea id="details" name="details" placeholder="Provide any additional information..."></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Details</h2>
+                <div class="sc-contact-cards-section pt-0" style="background: #fff;">
+                  <div class="container sc-contact-cards-container d-block blocked_items">
+                
+                    <div class="sc-contact-card">
+                      <div class="sc-contact-icon">
+                        <img src="assets/images/icons/map.svg" alt="Address Icon">
+                      </div>
+                      <h4>Our Address</h4>
+                      <p>Sydney, Australia</p>
+                    </div>
+                
+                    <div class="sc-contact-card">
+                      <div class="sc-contact-icon">
+                        <img src="assets/images/icons/phone.svg" alt="Phone Icon">
+                      </div>
+                      <h4>Call Us</h4>
+                      <p>
+                        <a href="tel:0405 800 000">0405 800 000</a>
+                      </p>
+                    </div>
+                
+                    <div class="sc-contact-card">
+                      <div class="sc-contact-icon">
+                        <img src="assets/images/icons/email.svg" alt="Email Icon">
+                      </div>
+                      <h4>Email Us</h4>
+                      <p>
+                        <a href="mailto:info@syncorpconstructions.com.au">info@syncorpconstructions.com.au</a>
+                      </p>
+                    </div>
+                
+                  </div>
+                </div>
+            </div>
+
+
         </div>
-    
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-          <!-- Example Project Card -->
-          <div class="project-card" data-category="completed">
-            <img src="assets/images/blog-s1.jpeg" alt="Project 1">
-            <h3 class="project-title">Modern Family Home</h3>
-          </div>
-    
-          <div class="project-card" data-category="ongoing">
-            <img src="assets/images/blog-s2.jpeg" alt="Project 2">
-            <h3 class="project-title">Luxury Villa Build</h3>
-          </div>
-    
-          <div class="project-card" data-category="upcoming">
-            <img src="assets/images/blog-s3.jpeg" alt="Project 3">
-            <h3 class="project-title">Rural Estate Project</h3>
-          </div>
-    
-          <div class="project-card" data-category="completed">
-            <img src="assets/images/blog-s2.jpeg" alt="Project 4">
-            <h3 class="project-title">Knockdown Rebuild</h3>
-          </div>
-    
-          <!-- Add more projects as needed -->
-        </div>
-      </div>
-    </section>
+    </div>
 
 	
 	<!-- Main Footer -->
@@ -414,30 +457,6 @@
     });
 });
 </script>
-
-
-<script>
-const tabs = document.querySelectorAll('.projects-tab');
-const projects = document.querySelectorAll('.project-card');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    
-    const tabCategory = tab.getAttribute('data-tab');
-    projects.forEach(project => {
-      if (tabCategory === 'all' || project.getAttribute('data-category') === tabCategory) {
-        project.style.display = 'block';
-      } else {
-        project.style.display = 'none';
-      }
-    });
-  });
-});
-</script>
-
-
 </body>
 
 </html>
