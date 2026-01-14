@@ -952,6 +952,29 @@ accordionButtons.forEach(btn => {
   });
 });
 </script>
+
+
+<script>
+const tabs = document.querySelectorAll('.projects-tab');
+const projects = document.querySelectorAll('.project-card');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    
+    const tabCategory = tab.getAttribute('data-tab');
+    projects.forEach(project => {
+      if (tabCategory === 'all' || project.getAttribute('data-category') === tabCategory) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+
 </body>
 
 </html>
