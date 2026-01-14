@@ -2054,8 +2054,13 @@ h2 {
     right: 10px;
     top: 10px;
 }
-
-
+.cta_bg2{
+  padding-top: 50px;
+  background: linear-gradient(135deg, #fac1b7, #fadfdd, #fac1b7);
+}
+.pdreddmall h3{
+  line-height: 30px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -2069,6 +2074,9 @@ h2 {
 
   .syncorp-points-list {
     grid-template-columns: 1fr;
+  }
+  .pdreddmall{
+    padding-top: 0;
   }
 }
 
