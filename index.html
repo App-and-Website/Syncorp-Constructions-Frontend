@@ -916,6 +916,42 @@
     });
 });
 </script>
+
+
+
+<script>
+const accordionButtons = document.querySelectorAll('.accordion .acc-btn');
+
+accordionButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const block = this.parentElement;           // <li class="block">
+    const content = block.querySelector('.acc-content');
+
+    // Toggle clicked block
+    if (block.classList.contains('active-block')) {
+      // Close this block
+      block.classList.remove('active-block');
+      this.classList.remove('active');          // this removes active from acc-btn
+      content.classList.remove('current');      // hide content
+    } else {
+      // Optional: close other blocks if you want only one open
+      const allBlocks = document.querySelectorAll('.accordion .block');
+      allBlocks.forEach(b => {
+        if (b !== block) {
+          b.classList.remove('active-block');
+          b.querySelector('.acc-btn').classList.remove('active');
+          b.querySelector('.acc-content').classList.remove('current');
+        }
+      });
+
+      // Open clicked block
+      block.classList.add('active-block');
+      this.classList.add('active');
+      content.classList.add('current');
+    }
+  });
+});
+</script>
 </body>
 
 </html>

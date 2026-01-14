@@ -1916,7 +1916,168 @@ h2 {
 }
 
 
+.textwhitecustom h2{
+  color: #fff;
+}
+.textwhitecustom p{
+  color: #eee;
+}
+.servc .rc2-hero-right {
+    background: #fff;
+    border-radius: 2px!important;
+    padding: 36px;
+    box-shadow: none;
+}
+.servc .rc2-hero-right img {
+    border-radius: 4px!important;
+}
 
+
+
+/* Section Styling */
+.syncorp-home-section {
+  padding: 0 0 60px 0;
+  color: #111;
+}
+
+.syncorp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Main Title and Paragraphs */
+.syncorp-main-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.syncorp-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  opacity: 0.95;
+}
+
+/* Points Section */
+.syncorp-points-section {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.syncorp-points-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.syncorp-points-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 30px;
+}
+
+.syncorp-points-list li {
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+    font-weight: 500;
+    color: #444;
+    font-family: inherit;
+}
+
+.syncorp-points-list li::before {
+  content: "✔"; /* Unicode tick */
+  position: absolute;
+  left: 0;
+  top: 2px; /* Adjust for vertical alignment */
+  font-size: 14px;
+  color: #fff; /* Green tick color, you can change */
+  line-height: 1;
+  background: #e6392a;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nsg-cta {
+  background: #fff;
+  padding-top: 0;
+}
+.cta_wrapped{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+.cta_wrapped h2{
+  color: #fff;
+}
+.cta_wrapped p{
+  color: #eee;
+  max-width: 900px;
+}
+.ctabtntwo{
+  margin-left: 10px;
+}
+
+
+/* Hide accordion content by default */
+.accordion .acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+/* Show content when current */
+.accordion .acc-content.current {
+  max-height: 1000px; /* large enough to show content */
+}
+.skyline-faq .acc-content .content {
+    padding: 0;
+}
+.skyline-faq .accordion.block {
+    padding: 0px!important;
+}
+.accordion-box .block .icon-outer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .syncorp-home-section {
+    padding: 60px 16px;
+  }
+
+  .syncorp-main-title {
+    font-size: 1.8rem;
+  }
+
+  .syncorp-points-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .ctabtntwo{
+  margin-left: 0px;
+   margin-top: 10px;
+}
+}
 /* Responsive */
 @media (max-width: 768px) {
   .sc-process-item {
